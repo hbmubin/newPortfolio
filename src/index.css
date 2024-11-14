@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Cairo:wght@200..1000&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Arvo", serif;
+  /* background: #ebebeb; */
+  color: #333333;
+  background-color: #ebebeb;
+  background-image: url("https://www.transparenttextures.com/patterns/pyramid.png");
+}
+
+.title {
+  transition: all ease-in-out 0.4s;
+}
+.navIcon {
+  transition: all ease-in-out 0.4s;
+}
+/* .navAnime:active {
+  transform: scale(0.95) !important;
+} */
+.link:hover .title {
+  opacity: 100;
+  transition: all ease-in-out 0.4s;
+}
+.link:hover .navIcon {
+  opacity: 0;
+  transition: all ease-in-out 0.4s;
+}
+
+.card {
+  background: linear-gradient(#f9fbe9, #f9fbe9) padding-box,
+    linear-gradient(to right, #0cbfdf48, #ffde5954) border-box;
+  border-radius: 1rem;
+  border: 2px solid transparent;
+  transition: all ease-in-out 0.4s !important;
+  @apply shadow-md shadow-purple-200;
+}
+.card:hover {
+  background: linear-gradient(#f9fbe9, #f9fbe9) padding-box,
+    linear-gradient(to right, #0cbfdfb5, #ffde59b2) border-box;
+  transition: all ease-in-out 0.3s !important;
+  transform: translateY(-1px);
+  @apply shadow-xl shadow-purple-200;
+
+  /* transform: scale(var(--scale)); */
+}
+
+.nav {
+  background: linear-gradient(#9ca3afb8, #9ca3afb8) padding-box,
+    linear-gradient(to right, #0cbfdf48, #ffde5954) border-box;
+  backdrop-filter: blur(0px) !important;
+  border-radius: 1.8rem;
+  transition: all ease-in-out 0.4s !important;
+  border: 2px solid transparent;
+  @apply shadow-md shadow-purple-200;
+}
+.nav:hover {
+  background: linear-gradient(#9ca3afb8, #9ca3afb8) padding-box,
+    linear-gradient(to right, #0cbfdf6a, #ffde5961) border-box;
+  transition: all ease-in-out 0.3s !important;
+  transform: scale(1.02);
+  @apply shadow-xl shadow-purple-200;
+}
+.social {
+  background: linear-gradient(#f9fbe9, #f9fbe9) padding-box,
+    linear-gradient(to right, #0cbfdf4d, #ffde5950) border-box;
+  backdrop-filter: blur(0px) !important;
+  border-radius: 1.8rem;
+  border: 1px solid transparent;
+  transition: all ease-in-out 0.3s !important;
+  @apply shadow-md shadow-purple-200;
+}
+.social:hover {
+  background: linear-gradient(#f9fbe9, #f9fbe9) padding-box,
+    linear-gradient(to right, #0cbfdfcb, #ffde59d4) border-box;
+  transform: scale(1.1);
+  transform: translateY(-2px);
+  @apply shadow-xl shadow-purple-200;
+}
+.resumeText .resumeLine {
+  /* transition: all ease-in-out 0.3s !important; */
+}
+
+.resumeText:hover {
+  background: #121fcf;
+  background: linear-gradient(to right, #121fcf 0%, #cf1512 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.resumeText:hover .resumeLine {
+  background: linear-gradient(to right, #121fcf 0%, #cf1512 100%);
+}

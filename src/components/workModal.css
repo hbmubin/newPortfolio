@@ -1,0 +1,23 @@
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+.closeIcon {
+  fill: #e7e7e7;
+  transition: all ease-in-out 0.2s;
+}
+.closeIcon:hover {
+  fill: #fff;
+}
+.closeSpan {
+  position: sticky !important;
+  top: -2.4rem;
+  margin-right: -2.4rem !important;
+  margin-top: -2.4rem !important;
+}
+
+.MuiBackdrop-root {
+  background: rgba(0, 0, 0, 0.474) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
