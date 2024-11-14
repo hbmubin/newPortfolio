@@ -4,11 +4,11 @@ import Social from "./components/Social";
 
 function App() {
   return (
-    <>
+    <div className="relative overflow-x-hidden">
       <Navbar></Navbar>
       <Outlet></Outlet>
       <Social></Social>
-    </>
+    </div>
   );
 }
 

@@ -53,7 +53,7 @@ body {
   backdrop-filter: blur(0px) !important;
   border-radius: 1.8rem;
   transition: all ease-in-out 0.4s !important;
-  border: 2px solid transparent;
+  /* border: 2px solid transparent; */
   @apply shadow-md shadow-purple-200;
 }
 .nav:hover {

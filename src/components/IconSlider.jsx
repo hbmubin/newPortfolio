@@ -64,7 +64,7 @@ const skills = [
 
 const IconSlider = () => {
   return (
-    <div className="w-[600px] ">
+    <div className="md:w-[600px]  overflow-hidden px-7 md:px-0">
       <Swiper
         loop={true}
         effect={"coverflow"}

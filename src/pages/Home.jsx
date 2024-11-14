@@ -4,6 +4,7 @@ import IconSlider from "../components/IconSlider";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet";
 
 const Home = () => {
   const [text] = useTypewriter({
@@ -25,8 +26,12 @@ const Home = () => {
   }, []);
 
   return (
-    <main className="h-screen flex items-center">
-      <div className="container mx-auto xl:max-w-screen-xl flex gap-20 w-full">
+    <main className="min-h-screen flex items-center ">
+      <Helmet>
+        <title>HB MUBIN</title>
+        <meta name="description" content="Hasanul Banna Mubin | HB Mubin" />
+      </Helmet>
+      <div className="container mx-auto xl:max-w-screen-xl flex px-4 sm:px-0 py-24 lg:py-0 flex-col lg:flex-row gap-20 w-full">
         <motion.article
           initial={{ x: -2000 }}
           animate={{ x: 0 }}
@@ -74,19 +79,22 @@ const Home = () => {
             </button>
           </div>
         </motion.article>
-        <div className="flex-1 flex flex-col justify-between">
+        <div className="flex-1 flex flex-col gap-20 lg:gap-0 justify-between">
           <motion.article
             initial={{ x: 2000 }}
             animate={{ x: 0 }}
             transition={{ duration: 0.1, delay: 0.15, ease: "easeInOut" }}
-            className="bg-card p-10 card rounded-2xl"
+            className="bg-card p-10 card rounded-2xl  text-center lg:text-start"
           >
             <h2 className="text-2xl mb-2">About me</h2>
             <p>
-              When I was a kid, I enjoyed being around computers and, as I grew
-              up, I kept developing my relationship with them. During my time in
-              college, I started working as a graphic designer, but it was only
-              later that I found my passion: the web.
+              I{"'"}m a very ambitious front-end developer looking for a role in
+              an established IT company where I can work with the latest
+              technologies on challenging and diverse projects. I{"'"}m quietly
+              confident, naturally curious, and perpetually working on improving
+              my chops one design problem at a time. If I need to define myself
+              in one sentence that would be a family person, a sports fanatic,
+              and tech-obsessed!
             </p>
           </motion.article>
           <motion.article

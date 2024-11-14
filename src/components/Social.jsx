@@ -5,7 +5,7 @@ import { FiGithub } from "react-icons/fi";
 
 const Social = () => {
   return (
-    <ul className="absolute bottom-[4%] left-1/2 z-[1009] -translate-x-1/2 flex items-center gap-2">
+    <ul className="fixed bottom-[4%] left-1/2 z-[1009] -translate-x-1/2 flex items-center gap-2">
       {social.map(({ id, icon, link }) => (
         <li key={id}>
           <Link

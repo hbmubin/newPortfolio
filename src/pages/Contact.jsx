@@ -2,11 +2,16 @@ import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import "../components/contact.css";
 import ContactFrom from "../components/ContactFrom";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet";
 
 const Contact = () => {
   return (
-    <section className="h-screen flex items-center">
-      <div className="container mx-auto xl:max-w-screen-xl grid grid-cols-2 gap-20 w-full">
+    <section className="min-h-screen flex items-center">
+      <Helmet>
+        <title>HB MUBIN | Contact</title>
+        <meta name="description" content="Hasanul Banna Mubin | HB Mubin" />
+      </Helmet>
+      <div className="container mx-auto xl:max-w-screen-xl grid lg:grid-cols-2 grid-cols-1 gap-20 w-full px-4 sm:px-0 lg:py-0 py-24">
         <motion.article
           initial={{ x: -2000 }}
           animate={{ x: 0 }}
@@ -22,9 +27,10 @@ const Contact = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.3, ease: "easeInOut" }}
-          className="mapCard relative"
+          className="mapCard relative lg:aspect-auto aspect-square lg:w-full "
+          // style={{ aspectRatio: "1/1" }}
         >
-          <div className="absolute top-[12%] left-[12%] bg-text z-[999] text-back text-[9px]  p-2 rounded-md">
+          <div className="absolute top-[12%] sm:left-[12%] left-1/2 sm:translate-x-0 -translate-x-2/3 bg-text z-[999] text-back text-[9px]  p-2 rounded-md">
             <h2>Hasanul Banna Mubin</h2>
             <p>Bijoy 71 hall, University of Dhaka</p>
             <p>Dhaka 1000, Bangladesh</p>

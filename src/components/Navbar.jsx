@@ -10,7 +10,7 @@ const Navbar = () => {
     <nav className="fixed top-4 left-1/2 -translate-x-1/2 z-[1009]">
       <ul
         className="h-full nav w-full  
- flex rounded-[1.8rem] overflow-hidden"
+ flex rounded-[1.8rem] overflow-hidden border-[1.6px] md:border-[2px] border-transparent"
       >
         {navLinks.map(({ title, id, link }) => (
           <li key={id}>
