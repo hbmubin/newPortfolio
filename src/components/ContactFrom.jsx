@@ -54,8 +54,8 @@ const ContactFrom = () => {
   return (
     <form ref={form} onSubmit={sendEmail}>
       <ToastContainer />
-      <div className="grid grid-cols-2 gap-4">
-        <div className="mb-5">
+      <div className="grid sm:grid-cols-2 grid-cols-1 gap-5 mb-5">
+        <div className="">
           <input
             type="text"
             name="from_name"

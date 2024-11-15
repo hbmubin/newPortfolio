@@ -13,10 +13,10 @@ const Contact = () => {
       </Helmet>
       <div className="container mx-auto xl:max-w-screen-xl grid lg:grid-cols-2 grid-cols-1 gap-20 w-full px-4 sm:px-0 lg:py-0 py-24">
         <motion.article
-          initial={{ x: -2000 }}
+          initial={{ x: 2000 }}
           animate={{ x: 0 }}
           transition={{ duration: 0.3, ease: "easeInOut" }}
-          className="bg-card p-10 rounded-3xl formForm"
+          className="bg-card sm:p-10 p-6 rounded-3xl formForm"
         >
           <div className="mb-8">
             <h2 className="text-3xl">Contact me</h2>

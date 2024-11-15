@@ -54,7 +54,7 @@ export default function TransitionsModal({ work }) {
         <Fade in={open}>
           <Box
             sx={style}
-            className="modalBox z-[9999] sm:p-16 sm:pb-20 p-6 pb-8 "
+            className="modalBox z-[9999] sm:p-16 sm:pb-20 p-6 pb-16 "
           >
             <div className="flex justify-end closeSpan ">
               <span

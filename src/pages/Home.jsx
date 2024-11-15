@@ -28,7 +28,7 @@ const Home = () => {
   return (
     <main className="min-h-screen flex items-center ">
       <Helmet>
-        <title>HB MUBIN</title>
+        <title>HB Mubin - Frontend Developer</title>
         <meta name="description" content="Hasanul Banna Mubin | HB Mubin" />
       </Helmet>
       <div className="container mx-auto xl:max-w-screen-xl flex px-4 sm:px-0 py-24 xl:py-0 flex-col xl:flex-row justify-between gap-20 w-full">

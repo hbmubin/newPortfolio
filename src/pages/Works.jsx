@@ -58,14 +58,14 @@ const Works = () => {
         <motion.div
           initial={{ x: 100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.3, delay: 1, ease: "easeInOut" }}
-          className="w-full h-[78vh] workSlide"
+          transition={{ duration: 0.3, delay: 1.2, ease: "easeInOut" }}
+          className="w-full h-[78vh]   workSlide"
         >
           <Swiper
             slidesPerView={slidesPerView}
             spaceBetween={30}
             mousewheel={true}
-            className="mySwiper"
+            className="mySwiper "
             modules={[Mousewheel]}
           >
             {works.map((work) => (

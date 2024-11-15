@@ -53,7 +53,7 @@ body {
   backdrop-filter: blur(0px) !important;
   border-radius: 1.8rem;
   transition: all ease-in-out 0.4s !important;
-  /* border: 2px solid transparent; */
+  transform: translateX(-50%);
   @apply shadow-sm shadow-purple-200;
 }
 .nav:hover {
@@ -61,7 +61,12 @@ body {
     linear-gradient(to right, #0cbfdf6a, #ffde5961) border-box;
   transition: all ease-in-out 0.3s !important;
   transform: scale(1.02);
+  transform: translateX(-50%);
+
   @apply shadow-md shadow-purple-200;
+}
+.socialTab {
+  transform: translateX(-50%) !important;
 }
 .social {
   background: linear-gradient(#f9fbe9, #f9fbe9) padding-box,
@@ -78,9 +83,6 @@ body {
   transform: scale(1.1);
   transform: translateY(-2px);
   @apply shadow-xl shadow-purple-200;
-}
-.resumeText .resumeLine {
-  /* transition: all ease-in-out 0.3s !important; */
 }
 
 .resumeText:hover {
