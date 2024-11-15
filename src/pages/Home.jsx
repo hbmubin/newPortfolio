@@ -31,7 +31,7 @@ const Home = () => {
         <title>HB MUBIN</title>
         <meta name="description" content="Hasanul Banna Mubin | HB Mubin" />
       </Helmet>
-      <div className="container mx-auto xl:max-w-screen-xl flex px-4 sm:px-0 py-24 lg:py-0 flex-col lg:flex-row gap-20 w-full">
+      <div className="container mx-auto xl:max-w-screen-xl flex px-4 sm:px-0 py-24 xl:py-0 flex-col xl:flex-row justify-between gap-20 w-full">
         <motion.article
           initial={{ x: -2000 }}
           animate={{ x: 0 }}
@@ -79,7 +79,7 @@ const Home = () => {
             </button>
           </div>
         </motion.article>
-        <div className="flex-1 flex flex-col gap-20 lg:gap-0 justify-between">
+        <div className="flex-1 flex flex-col gap-20 xl:gap-0 justify-between">
           <motion.article
             initial={{ x: 2000 }}
             animate={{ x: 0 }}

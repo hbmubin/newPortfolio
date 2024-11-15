@@ -1,10 +1,21 @@
 import { NavLink, useLocation } from "react-router-dom";
 import { GrHomeOption } from "react-icons/gr";
 import { MdOutlineEmail, MdOutlineEventNote } from "react-icons/md";
+import { useMotionValueEvent, useScroll } from "framer-motion";
+import { useState } from "react";
 
 const Navbar = () => {
   const location = useLocation();
   const path = location.pathname;
+  const [hidden, setHidden] = useState(false);
+
+  const { scrollY } = useScroll();
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    const previous = scrollY.getPrevious();
+    console.log("latest", latest);
+    console.log("previous", previous);
+  });
 
   return (
     <nav className="fixed top-4 left-1/2 -translate-x-1/2 z-[1009]">

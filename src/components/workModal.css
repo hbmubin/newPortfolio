@@ -21,3 +21,13 @@
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
+#transition-modal-title {
+  margin-top: -20px;
+}
+@media (max-width: 640px) {
+  .closeSpan {
+    top: 0rem;
+    margin-right: 0rem !important;
+    margin-top: -1rem !important;
+  }
+}

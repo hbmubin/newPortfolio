@@ -54,14 +54,14 @@ body {
   border-radius: 1.8rem;
   transition: all ease-in-out 0.4s !important;
   /* border: 2px solid transparent; */
-  @apply shadow-md shadow-purple-200;
+  @apply shadow-sm shadow-purple-200;
 }
 .nav:hover {
   background: linear-gradient(#9ca3afb8, #9ca3afb8) padding-box,
     linear-gradient(to right, #0cbfdf6a, #ffde5961) border-box;
   transition: all ease-in-out 0.3s !important;
   transform: scale(1.02);
-  @apply shadow-xl shadow-purple-200;
+  @apply shadow-md shadow-purple-200;
 }
 .social {
   background: linear-gradient(#f9fbe9, #f9fbe9) padding-box,
