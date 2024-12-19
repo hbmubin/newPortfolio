@@ -95,7 +95,7 @@ const ContactFrom = () => {
       <div className="flex justify-end mt-3">
         <button
           type="submit"
-          className="text-md uppercase sendBtn tracking-widest"
+          className="text-md uppercase sendBtn tracking-widest active:scale-[.98] duration-100"
         >
           {checkSubmit ? (
             <span>

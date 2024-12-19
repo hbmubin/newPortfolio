@@ -28,6 +28,9 @@ body {
   opacity: 0;
   transition: all ease-in-out 0.4s;
 }
+.link:active{
+  transform: scale(0.95);
+}
 
 .card {
   background: linear-gradient(#f9fbe9, #f9fbe9) padding-box,

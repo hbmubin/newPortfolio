@@ -1,9 +1,10 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
 import { useState } from "react";
 import { useMotionValueEvent, useScroll, motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Social = () => {
   const [hidden, setHidden] = useState(false);
@@ -22,7 +23,7 @@ const Social = () => {
     <ul className="fixed bottom-[4%] -translate-x-1/2 left-1/2 z-[1009] socialTab flex items-center gap-2">
       {social.map(({ id, icon, link }) => (
         <li key={id}>
-          <motion.Link
+          <motion.a
             variants={{
               visible: { y: 0, opacity: 1 },
               hidden: { y: 80, opacity: 1 },
@@ -35,11 +36,12 @@ const Social = () => {
                 : { duration: 0.5, ease: "easeInOut" }
             }
             className="p-2 inline-block social duration-300 transition-colors "
-            to={link}
+            href={link}
             target="_blank"
+            rel="noopener noreferrer"
           >
             {icon}
-          </motion.Link>
+          </motion.a>
         </li>
       ))}
     </ul>
