@@ -2,7 +2,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import WorkModal from "../components/WorkModal";
 import { motion } from "framer-motion";
 import ReactLoading from "react-loading";
-
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import "../components/workSlide.css";
 
 import works from "../data/works";
@@ -70,7 +71,7 @@ const Works = () => {
           >
             {works.map((work) => (
               <SwiperSlide className="relative" key={work.id}>
-                <img src={work.img} alt={work.title} />
+                <LazyLoadImage className="w-full" effect="blur" src={work.img} alt={work.title} />
                 <h2 className="absolute top-0 p-8 text-2xl left-0 text-white z-30 workTitle">
                   {work.title}
                 </h2>
