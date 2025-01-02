@@ -17,6 +17,8 @@ const Works = () => {
   const location = useLocation();
   const [loading, setLoading] = useState(false);
   const [slidesPerView, setSlidesPerView] = useState(3.5);
+  const [open, setOpen] = useState(false);
+  const [selectedWork, setSelectedWork] = useState(null);
 
   useEffect(() => {
     const updateSlidesPerView = () => {
@@ -51,34 +53,24 @@ const Works = () => {
           <ReactLoading type="bubbles" width={200} color="#0cbfdf6c" />
         </span>
       )}
-      <main
-        className={`min-h-screen w-full flex items-center ${
-          loading ? "opacity-0" : "opacity-100"
-        }`}
-      >
-        <motion.div
-          initial={{ x: 100, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.3, delay: 1.2, ease: "easeInOut" }}
-          className="w-full h-[78vh]   workSlide"
-        >
-          <Swiper
-            slidesPerView={slidesPerView}
-            spaceBetween={30}
-            mousewheel={true}
-            className="mySwiper "
-            modules={[Mousewheel]}
-          >
+      <main className={`min-h-screen w-full flex items-center ${loading ? "opacity-0" : "opacity-100"}`}>
+        <motion.div initial={{ x: 100, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 0.3, delay: 1.2, ease: "easeInOut" }} className="w-full h-[78vh]   workSlide">
+          <Swiper slidesPerView={slidesPerView} spaceBetween={30} mousewheel={true} className="mySwiper " modules={[Mousewheel]}>
             {works.map((work) => (
               <SwiperSlide className="relative" key={work.id}>
+                <span
+                  className="absolute to-0 left-0 w-full h-full z-50"
+                  onClick={() => {
+                    setSelectedWork(work);
+                    setOpen(true);
+                  }}
+                ></span>
                 <LazyLoadImage className="w-full" effect="blur" src={work.img} alt={work.title} />
-                <h2 className="absolute top-0 p-8 text-2xl left-0 text-white z-30 workTitle">
-                  {work.title}
-                </h2>
+                <h2 className="absolute top-0 p-8 text-2xl left-0 text-white z-30 workTitle">{work.title}</h2>
                 <span className="absolute bottom-3 right-3 inline-block p-2 rounded-full bg-gray-400">
                   <HiPlus color="#fff" />
                 </span>
-                <WorkModal work={work}></WorkModal>
+                <WorkModal work={selectedWork} open={open} setOpen={setOpen}></WorkModal>
 
                 <span className="h-full w-full absolute top-0 left-0 bg-gradient-to-b from-[#00000091] via-[#00000008] to-[#00000010]"></span>
               </SwiperSlide>
