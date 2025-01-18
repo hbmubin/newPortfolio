@@ -56,7 +56,7 @@ const Works = () => {
       <main className={`min-h-screen w-full flex items-center ${loading ? "opacity-0" : "opacity-100"}`}>
         <motion.div initial={{ x: 100, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 0.3, delay: 1.2, ease: "easeInOut" }} className="w-full h-[78vh]   workSlide">
           <Swiper slidesPerView={slidesPerView} spaceBetween={30} mousewheel={true} className="mySwiper " modules={[Mousewheel]}>
-            {works.map((work) => (
+            {works?.map((work) => (
               <SwiperSlide className="relative" key={work.id}>
                 <span
                   className="absolute to-0 left-0 w-full h-full z-50"

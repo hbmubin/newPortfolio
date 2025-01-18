@@ -4,6 +4,8 @@ import master from "../assets/works/screencapture-dainty-croissant-26db9e-netlif
 import tourism from "../assets/works/screencapture-tourism-nexus-netlify-app-2024-11-10-20_18_44.png";
 import dashboard from "../assets/works/screencapture-task-1-liard-theta-vercel-app-2024-11-10-19_41_20.png";
 import nova from "../assets/works/screencapture-nova-properties-assign-9-web-app-2024-11-10-20_18_07.png";
+import maya from "../assets/works/mobilemaya.png";
+import anas from "../assets/works/anasmunir.png";
 
 const works = [
   {
@@ -47,6 +49,20 @@ const works = [
     des: "Nova Properties is a responsive web app featuring user authentication, smooth animations, and detailed property listings with an intuitive slider, built using React and essential npm packages like AOS and Swiper Slider.",
     img: nova,
     link: "https://nova-properties-assign-9.web.app",
+  },
+  {
+    id: 7,
+    title: "Authoritative online platform",
+    des: "MobileMaya is a popular and authoritative online platform that provides detailed information and reviews about mobile phones, tablets, and other mobile technology. It is widely recognized as one of the go-to websites for exploring specifications, comparisons, and reviews of mobile devices.",
+    img: maya,
+    link: "https://task-mobile-maya.vercel.app",
+  },
+  {
+    id: 8,
+    title: "Freelancer portfolio project",
+    des: " ",
+    img: anas,
+    link: "https://anasmunir.vercel.app",
   },
 ];
 
