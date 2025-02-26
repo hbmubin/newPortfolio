@@ -17,10 +17,10 @@ const works = [
   },
   {
     id: 2,
-    title: "Food programme project",
-    des: "Nourish4All connecting donors with surplus food to those in need. Built using React and Node.js, the platform facilitates donations and tracks food supply.",
-    img: nourish,
-    link: "https://nourish4all-assign-11.web.app",
+    title: "Authoritative online platform",
+    des: "MobileMaya is a popular and authoritative online platform that provides detailed information and reviews about mobile phones, tablets, and other mobile technology. It is widely recognized as one of the go-to websites for exploring specifications, comparisons, and reviews of mobile devices.",
+    img: maya,
+    link: "https://mobilemaya.me",
   },
   {
     id: 3,
@@ -52,10 +52,10 @@ const works = [
   },
   {
     id: 7,
-    title: "Authoritative online platform",
-    des: "MobileMaya is a popular and authoritative online platform that provides detailed information and reviews about mobile phones, tablets, and other mobile technology. It is widely recognized as one of the go-to websites for exploring specifications, comparisons, and reviews of mobile devices.",
-    img: maya,
-    link: "https://task-mobile-maya.vercel.app",
+    title: "Food programme project",
+    des: "Nourish4All connecting donors with surplus food to those in need. Built using React and Node.js, the platform facilitates donations and tracks food supply.",
+    img: nourish,
+    link: "https://nourish4all-assign-11.web.app",
   },
   {
     id: 8,
